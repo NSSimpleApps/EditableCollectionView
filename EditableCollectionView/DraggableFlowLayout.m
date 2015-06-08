@@ -30,10 +30,6 @@ static NSString * const kCollectionView = @"collectionView";
 
 @property (strong, nonatomic) UILongPressGestureRecognizer *longPressRecognizer;
 
-@property (weak, nonatomic) id<DraggableFlowLayoutDelegate> delegate;
-
-@property (weak, nonatomic) id<DraggableFlowLayoutDataSource> dataSource;
-
 @end
 
 @implementation DraggableFlowLayout
