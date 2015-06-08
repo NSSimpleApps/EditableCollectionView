@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		B5A001711B24B40700431A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001701B24B40700431A18 /* main.m */; };
 		B5A001741B24B40700431A18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001731B24B40700431A18 /* AppDelegate.m */; };
-		B5A001771B24B40700431A18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001761B24B40700431A18 /* ViewController.m */; };
 		B5A0017A1B24B40800431A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A001781B24B40800431A18 /* Main.storyboard */; };
 		B5A0017C1B24B40800431A18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A0017B1B24B40800431A18 /* Images.xcassets */; };
 		B5A0017F1B24B40800431A18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A0017D1B24B40800431A18 /* LaunchScreen.xib */; };
 		B5A0018B1B24B40800431A18 /* EditableCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0018A1B24B40800431A18 /* EditableCollectionViewTests.m */; };
+		B5A001961B24B57C00431A18 /* DraggableFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001951B24B57C00431A18 /* DraggableFlowLayout.m */; };
+		B5B420021B25919100E85E3D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B420011B25919100E85E3D /* CollectionViewController.m */; };
+		B5B4200A1B25D01800E85E3D /* EditableCollectionView.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5B420091B25D01800E85E3D /* EditableCollectionView.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,17 @@
 		B5A001701B24B40700431A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5A001721B24B40700431A18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5A001731B24B40700431A18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5A001751B24B40700431A18 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5A001761B24B40700431A18 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B5A001791B24B40800431A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5A0017B1B24B40800431A18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5A0017E1B24B40800431A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B5A001841B24B40800431A18 /* EditableCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EditableCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A001891B24B40800431A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A0018A1B24B40800431A18 /* EditableCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditableCollectionViewTests.m; sourceTree = "<group>"; };
+		B5A001941B24B57C00431A18 /* DraggableFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableFlowLayout.h; sourceTree = "<group>"; };
+		B5A001951B24B57C00431A18 /* DraggableFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableFlowLayout.m; sourceTree = "<group>"; };
+		B5B420001B25919100E85E3D /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		B5B420011B25919100E85E3D /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		B5B420091B25D01800E85E3D /* EditableCollectionView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = EditableCollectionView.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +86,13 @@
 		B5A0016D1B24B40700431A18 /* EditableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				B5B420091B25D01800E85E3D /* EditableCollectionView.gif */,
 				B5A001721B24B40700431A18 /* AppDelegate.h */,
 				B5A001731B24B40700431A18 /* AppDelegate.m */,
-				B5A001751B24B40700431A18 /* ViewController.h */,
-				B5A001761B24B40700431A18 /* ViewController.m */,
+				B5B420001B25919100E85E3D /* CollectionViewController.h */,
+				B5B420011B25919100E85E3D /* CollectionViewController.m */,
+				B5A001941B24B57C00431A18 /* DraggableFlowLayout.h */,
+				B5A001951B24B57C00431A18 /* DraggableFlowLayout.m */,
 				B5A001781B24B40800431A18 /* Main.storyboard */,
 				B5A0017B1B24B40800431A18 /* Images.xcassets */,
 				B5A0017D1B24B40800431A18 /* LaunchScreen.xib */,
@@ -202,6 +210,7 @@
 				B5A0017A1B24B40800431A18 /* Main.storyboard in Resources */,
 				B5A0017F1B24B40800431A18 /* LaunchScreen.xib in Resources */,
 				B5A0017C1B24B40800431A18 /* Images.xcassets in Resources */,
+				B5B4200A1B25D01800E85E3D /* EditableCollectionView.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A001771B24B40700431A18 /* ViewController.m in Sources */,
 				B5A001741B24B40700431A18 /* AppDelegate.m in Sources */,
 				B5A001711B24B40700431A18 /* main.m in Sources */,
+				B5B420021B25919100E85E3D /* CollectionViewController.m in Sources */,
+				B5A001961B24B57C00431A18 /* DraggableFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +428,7 @@
 				B5A001901B24B40800431A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5A001911B24B40800431A18 /* Build configuration list for PBXNativeTarget "EditableCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +437,7 @@
 				B5A001931B24B40800431A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
