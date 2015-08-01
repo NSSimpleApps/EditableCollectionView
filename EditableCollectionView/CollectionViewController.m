@@ -49,17 +49,21 @@ static NSString * const reuseIdentifier = @"Cell";
     
     UILabel *label = (UILabel *)[cell viewWithTag:101];
     label.text = self.array[indexPath.row];
+    
     return cell;
 }
 
 - (BOOL)canDragItemAtIndexPath:(NSIndexPath*)indexPath {
     
-    return indexPath.row == 0 || indexPath.row == 1;
+    return YES;
 }
 
 - (void)draggingDidEndFromIndexPath:(NSIndexPath*)oldIndexPath toIndexPath:(NSIndexPath*)newIndexPath {
     
-    [self.array exchangeObjectAtIndex:oldIndexPath.row withObjectAtIndex:newIndexPath.row];
+    id obj = [self.array objectAtIndex:oldIndexPath.row];
+    
+    [self.array removeObjectAtIndex:oldIndexPath.row];
+    [self.array insertObject:obj atIndex:newIndexPath.row];
 }
 
 @end
