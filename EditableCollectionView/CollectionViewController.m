@@ -11,7 +11,7 @@
 
 @interface CollectionViewController () <DraggableFlowLayoutDelegate, DraggableFlowLayoutDataSource>
 
-@property (strong, nonatomic) NSMutableArray *array;
+@property (strong, nonatomic) NSMutableArray<NSString *> *array;
 
 @end
 
@@ -38,32 +38,32 @@ static NSString * const reuseIdentifier = @"Cell";
     return 1;
 }
 
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
     return self.array.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     UILabel *label = (UILabel *)[cell viewWithTag:101];
-    label.text = self.array[indexPath.row];
+    label.text = self.array[indexPath.item];
     
     return cell;
 }
 
 - (BOOL)canDragItemAtIndexPath:(NSIndexPath*)indexPath {
     
-    return YES;
+    return indexPath.item == 0 || indexPath.item == 1;
 }
 
 - (void)draggingDidEndFromIndexPath:(NSIndexPath*)oldIndexPath toIndexPath:(NSIndexPath*)newIndexPath {
     
-    id obj = [self.array objectAtIndex:oldIndexPath.row];
+    id obj = [self.array objectAtIndex:oldIndexPath.item];
     
-    [self.array removeObjectAtIndex:oldIndexPath.row];
-    [self.array insertObject:obj atIndex:newIndexPath.row];
+    [self.array removeObjectAtIndex:oldIndexPath.item];
+    [self.array insertObject:obj atIndex:newIndexPath.item];
 }
 
 @end
