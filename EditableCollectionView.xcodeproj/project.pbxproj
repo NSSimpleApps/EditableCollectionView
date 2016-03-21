@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53B52D01CA046B0000D75B8 /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53B52CE1CA046B0000D75B8 /* LabelCell.m */; };
 		B5A001711B24B40700431A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001701B24B40700431A18 /* main.m */; };
 		B5A001741B24B40700431A18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001731B24B40700431A18 /* AppDelegate.m */; };
 		B5A0017A1B24B40800431A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A001781B24B40800431A18 /* Main.storyboard */; };
@@ -14,10 +15,11 @@
 		B5A0017F1B24B40800431A18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A0017D1B24B40800431A18 /* LaunchScreen.xib */; };
 		B5A001961B24B57C00431A18 /* DraggableFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001951B24B57C00431A18 /* DraggableFlowLayout.m */; };
 		B5B420021B25919100E85E3D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B420011B25919100E85E3D /* CollectionViewController.m */; };
-		B5B4200A1B25D01800E85E3D /* EditableCollectionView.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5B420091B25D01800E85E3D /* EditableCollectionView.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B53B52CD1CA046B0000D75B8 /* LabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCell.h; sourceTree = "<group>"; };
+		B53B52CE1CA046B0000D75B8 /* LabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
 		B5A0016B1B24B40700431A18 /* EditableCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditableCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A0016F1B24B40700431A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A001701B24B40700431A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +76,8 @@
 				B5A0017B1B24B40800431A18 /* Images.xcassets */,
 				B5A0017D1B24B40800431A18 /* LaunchScreen.xib */,
 				B5A0016E1B24B40700431A18 /* Supporting Files */,
+				B53B52CD1CA046B0000D75B8 /* LabelCell.h */,
+				B53B52CE1CA046B0000D75B8 /* LabelCell.m */,
 			);
 			path = EditableCollectionView;
 			sourceTree = "<group>";
@@ -147,7 +151,6 @@
 				B5A0017A1B24B40800431A18 /* Main.storyboard in Resources */,
 				B5A0017F1B24B40800431A18 /* LaunchScreen.xib in Resources */,
 				B5A0017C1B24B40800431A18 /* Images.xcassets in Resources */,
-				B5B4200A1B25D01800E85E3D /* EditableCollectionView.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B53B52D01CA046B0000D75B8 /* LabelCell.m in Sources */,
 				B5A001741B24B40700431A18 /* AppDelegate.m in Sources */,
 				B5A001711B24B40700431A18 /* main.m in Sources */,
 				B5B420021B25919100E85E3D /* CollectionViewController.m in Sources */,
@@ -224,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

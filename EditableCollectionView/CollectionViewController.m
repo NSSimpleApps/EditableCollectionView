@@ -8,6 +8,7 @@
 
 #import "CollectionViewController.h"
 #import "DraggableFlowLayout.h"
+#import "LabelCell.h"
 
 @interface CollectionViewController () <DraggableFlowLayoutDelegate, DraggableFlowLayoutDataSource>
 
@@ -16,8 +17,6 @@
 @end
 
 @implementation CollectionViewController
-
-static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     
@@ -45,10 +44,9 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    LabelCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([LabelCell class]) forIndexPath:indexPath];
     
-    UILabel *label = (UILabel *)[cell viewWithTag:101];
-    label.text = self.array[indexPath.item];
+    cell.label.text = self.array[indexPath.item];
     
     return cell;
 }
