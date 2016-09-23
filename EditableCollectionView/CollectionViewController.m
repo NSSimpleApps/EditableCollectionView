@@ -58,7 +58,7 @@
 
 - (void)draggingDidEndFromIndexPath:(NSIndexPath*)oldIndexPath toIndexPath:(NSIndexPath*)newIndexPath {
     
-    id obj = [self.array objectAtIndex:oldIndexPath.item];
+    id obj = self.array[oldIndexPath.item];
     
     [self.array removeObjectAtIndex:oldIndexPath.item];
     [self.array insertObject:obj atIndex:newIndexPath.item];

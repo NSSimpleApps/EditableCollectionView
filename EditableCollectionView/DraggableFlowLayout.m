@@ -48,7 +48,7 @@ static NSString * const kCollectionView = @"collectionView";
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
     
     self = [super initWithCoder:aDecoder];
     
